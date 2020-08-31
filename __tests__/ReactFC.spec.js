@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import ReactFC from '../src/ReactFC';
-import fusionChartsOptions from '../src/utils/options';
+import froalaChartsOptions from '../src/utils/options';
 import sampleData from './data.json';
 
 /* global describe it expect jest */
@@ -54,7 +54,7 @@ describe('ReactFC', () => {
 
     const resolvedChartOptions = instance.resolveChartOptions(instance.props);
     const expected = {
-      ...fusionChartsOptions.reduce((options, optionName) => (options[optionName] = undefined, options), {}),
+      ...froalaChartsOptions.reduce((options, optionName) => (options[optionName] = undefined, options), {}),
       ...chartOptions,
       events: Object.assign({}, mockedChartOptions.events),
       link: Object.assign({}, mockedChartOptions.link),
@@ -231,7 +231,7 @@ describe('ReactFC.fcRoot(core, ...modules)', () => {
 
     ReactFC.fcRoot(core, m1, m2);
 
-    expect(ReactFC.fusionChartsCore).toBe(core);
+    expect(ReactFC.froalaChartsCore).toBe(core);
     expect(m1).toHaveBeenCalledTimes(1);
     expect(m2).toHaveBeenCalledTimes(1);
   });

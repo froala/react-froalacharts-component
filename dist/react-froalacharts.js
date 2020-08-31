@@ -162,7 +162,7 @@ var ReactFC = /*#__PURE__*/function (_React$Component) {
           m(core);
         }
       });
-      ReactFC.fusionChartsCore = core;
+      ReactFC.froalaChartsCore = core;
     }
   }]);
 
@@ -174,7 +174,7 @@ var ReactFC = /*#__PURE__*/function (_React$Component) {
     _this = _super.call(this, props);
     _this.containerId = uuid_v4__WEBPACK_IMPORTED_MODULE_1___default()();
     _this.oldOptions = null;
-    _this.FusionCharts = props.fcLibrary || ReactFC.fusionChartsCore || window.FusionCharts;
+    _this.FroalaCharts = props.fcLibrary || ReactFC.froalaChartsCore || window.FroalaCharts;
     return _this;
   }
 
@@ -422,7 +422,7 @@ var ReactFC = /*#__PURE__*/function (_React$Component) {
         }
       }
 
-      this.chartObj = new this.FusionCharts(currentOptions);
+      this.chartObj = new this.FroalaCharts(currentOptions);
       this.chartObj.render();
       this.oldOptions = currentOptions;
 

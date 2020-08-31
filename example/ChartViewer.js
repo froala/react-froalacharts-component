@@ -1,13 +1,11 @@
 import React from 'react';
-import FroalaCharts from 'fusioncharts';
-import Charts from 'fusioncharts/fusioncharts.charts';
-import TimeSeries from 'fusioncharts/fusioncharts.timeseries';
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import FroalaCharts from 'froalacharts';
+import FusionTheme from 'froalacharts/themes/fusioncharts.theme.candy';
 import ReactFC from '../lib/ReactFC';
 
-ReactFC.fcRoot(FroalaCharts, Charts, TimeSeries, FusionTheme);
+ReactFC.fcRoot(FroalaCharts, FusionTheme);
 
-const BAR = 'bar2d';
+const BAR = 'bar';
 
 class ChartViewer extends React.Component {
   constructor(props) {
@@ -17,24 +15,170 @@ class ChartViewer extends React.Component {
       inverted: false,
       type: BAR,
       dataSource: {
-        chart: {
-          caption: 'Countries With Most Oil Reserves [2017-18]',
-          subCaption: 'In MMbbl = One Million barrels',
-          xAxisName: 'Country',
-          yAxisName: 'Reserves (MMbbl)',
-          numberSuffix: 'K',
-          theme: 'fusion'
+        "chart": {
+          "caption": "Business Results 2005 v 2006",
+          "xaxisname": "Month",
+          "yaxisname": "Revenue",
+          "showvalues": "0",
+          "numberprefix": "$",
+          "animation": "1",
+          "theme": "candy"
         },
-        data: [
-          { label: 'Venezuela', value: '290' },
-          { label: 'Saudi', value: '260' },
-          { label: 'Canada', value: '180' },
-          { label: 'Iran', value: '140' },
-          { label: 'Russia', value: '115' },
-          { label: 'UAE', value: '100' },
-          { label: 'US', value: '30' },
-          { label: 'China', value: '300' }
-        ]
+        "categories": [
+          {
+            "category": [
+              {
+                "label": "Jan"
+              },
+              {
+                "label": "Feb"
+              },
+              {
+                "label": "Mar"
+              },
+              {
+                "label": "Apr"
+              },
+              {
+                "label": "May"
+              },
+              {
+                "label": "Jun"
+              },
+              {
+                "label": "Jul"
+              },
+              {
+                "label": "Aug"
+              },
+              {
+                "label": "Sep"
+              },
+              {
+                "label": "Oct"
+              },
+              {
+                "label": "Nov"
+              },
+              {
+                "label": "Dec"
+              }
+            ]
+          }
+        ],
+        "dataset": [
+          {
+            "seriesname": "2006",
+            "data": [
+              {
+                "value": "27400"
+              },
+              {
+                "value": "29800"
+              },
+              {
+                "value": "25800"
+              },
+              {
+                "value": "26800"
+              },
+              {
+                "value": "29600"
+              },
+              {
+                "value": "32600"
+              },
+              {
+                "value": "31800"
+              },
+              {
+                "value": "36700"
+              },
+              {
+                "value": "29700"
+              },
+              {
+                "value": "31900"
+              },
+              {
+                "value": "34800"
+              },
+              {
+                "value": "24800"
+              }
+            ]
+          },
+          {
+            "seriesname": "2005",
+            "data": [
+              {
+                "value": "10000"
+              },
+              {
+                "value": "11500"
+              },
+              {
+                "value": "12500"
+              },
+              {
+                "value": "15000"
+              },
+              {
+                "value": "11000"
+              },
+              {
+                "value": "9800"
+              },
+              {
+                "value": "11800"
+              },
+              {
+                "value": "19700"
+              },
+              {
+                "value": "21700"
+              },
+              {
+                "value": "21900"
+              },
+              {
+                "value": "22900"
+              },
+              {
+                "value": "20800"
+              }
+            ]
+          }
+        ],
+        "trendlines": [
+          {
+            "line": [
+              {
+                "startvalue": "26000",
+                "color": "91C728",
+                "displayvalue": "Target",
+                "showontop": "1"
+              }
+            ]
+          }
+        ],
+        "styles": {
+          "definition": [
+            {
+              "name": "CanvasAnim",
+              "type": "animation",
+              "param": "_xScale",
+              "start": "0",
+              "duration": "1"
+            }
+          ],
+          "application": [
+            {
+              "toobject": "Canvas",
+              "styles": "CanvasAnim"
+            }
+          ]
+        }
       }
     };
     this.onChange = this.onChange.bind(this);

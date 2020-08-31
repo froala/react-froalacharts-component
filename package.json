@@ -1,11 +1,11 @@
 {
-  "name": "react-fusioncharts",
+  "name": "react-froalacharts",
   "version": "3.1.2",
-  "description": "Simple and Lightweight React component for FusionCharts JavaScript Charting Library",
+  "description": "Simple and Lightweight React component for FroalaCharts JavaScript Charting Library",
   "main": "lib/ReactFC.js",
   "author": {
-    "name": "FusionCharts",
-    "email": "support@fusioncharts.com"
+    "name": "Idera",
+    "email": "support@froala.com"
   },
   "license": "MIT",
   "contributors": [
@@ -30,13 +30,13 @@
       "url": "https://github.com/rohanoid5"
     }
   ],
-  "homepage": "https://github.com/fusioncharts/react-fusioncharts-component",
+  "homepage": "https://github.com/froala/react-froalacharts-component",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fusioncharts/react-fusioncharts-component.git"
+    "url": "https://github.com/froala/react-froalacharts-component.git"
   },
   "bugs": {
-    "url": "https://github.com/fusioncharts/react-fusioncharts-component/issues"
+    "url": "https://github.com/froala/react-froalacharts-component/issues"
   },
   "dependencies": {
     "uuid": "^3.2.1"
@@ -55,7 +55,7 @@
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
-    "fusioncharts": "^3.13.5-sr.1",
+    "froalacharts": "^1.0.4",
     "jest": "^22.4.2",
     "lodash": "^4.17.11",
     "nodemon": "^2.0.2",
@@ -86,7 +86,7 @@
     "react",
     "react-component",
     "component",
-    "fusioncharts",
+    "froalacharts",
     "javascript-charts",
     "interactive-charts",
     "charts",

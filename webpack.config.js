@@ -8,7 +8,7 @@ const reactFCBuilderConfig = {
     library: 'ReactFC',
     libraryTarget: 'umd',
     path: path.join(__dirname, 'dist'),
-    filename: 'react-fusioncharts.js',
+    filename: 'react-froalacharts.js',
     umdNamedDefine: true,
   },
   mode: 'none',
@@ -36,11 +36,11 @@ const reactFCBuilderConfig = {
       },
     },
     {
-      fusioncharts: {
-        root: 'FusionCharts',
-        commonjs2: 'fusioncharts',
-        commonjs: 'fusioncharts',
-        amd: 'fusioncharts',
+      froalacharts: {
+        root: 'FroalaCharts',
+        commonjs2: 'froalacharts',
+        commonjs: 'froalacharts',
+        amd: 'froalacharts',
       },
     },
   ],
@@ -81,19 +81,19 @@ const drillDownBuilderConfig = {
       },
     },
     {
-      fusioncharts: {
-        root: 'FusionCharts',
-        commonjs2: 'fusioncharts',
-        commonjs: 'fusioncharts',
-        amd: 'fusioncharts',
+      froalacharts: {
+        root: 'FroalaCharts',
+        commonjs2: 'froalacharts',
+        commonjs: 'froalacharts',
+        amd: 'froalacharts',
       },
     },
     {
       reactfc: {
         root: 'ReactFC',
-        commonjs2: 'react-fusioncharts',
-        commonjs: 'react-fusioncharts',
-        amd: 'react-fusioncharts',
+        commonjs2: 'react-froalacharts',
+        commonjs: 'react-froalacharts',
+        amd: 'react-froalacharts',
       },
     },
   ],
@@ -107,7 +107,7 @@ const drillFCProd = _.cloneDeep(drillDownBuilderConfig);
 reactFCProd.name = 'reactfcProd';
 drillFCProd.name = 'drilldownProd';
 
-reactFCProd.output.filename = 'react-fusioncharts.min.js';
+reactFCProd.output.filename = 'react-froalacharts.min.js';
 drillFCProd.output.filename = 'drill-down.min.js';
 
 reactFCProd.mode = 'production';

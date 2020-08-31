@@ -1,7 +1,7 @@
 import React from 'react';
 import uuid from 'uuid/v4';
 import * as utils from './utils/utils';
-import fusionChartsOptions from './utils/options';
+import froalaChartsOptions from './utils/options';
 
 class ReactFC extends React.Component {
   static fcRoot(core, ...modules) {
@@ -12,7 +12,7 @@ class ReactFC extends React.Component {
         m(core);
       }
     });
-    ReactFC.fusionChartsCore = core;
+    ReactFC.froalaChartsCore = core;
   }
 
   constructor(props) {
@@ -20,8 +20,8 @@ class ReactFC extends React.Component {
 
     this.containerId = uuid();
     this.oldOptions = null;
-    this.FusionCharts =
-      props.fcLibrary || ReactFC.fusionChartsCore || window.FusionCharts;
+    this.FroalaCharts =
+      props.fcLibrary || ReactFC.froalaChartsCore || window.FroalaCharts;
   }
 
   componentDidMount() {
@@ -55,7 +55,7 @@ class ReactFC extends React.Component {
     this.checkAndUpdateChartData(currentOptions, oldOptions);
     this.checkAndUpdateEvents(currentOptions, oldOptions);
     this.checkAndUpdateRestOptions(
-      fusionChartsOptions.filter(
+      froalaChartsOptions.filter(
         option => optionsUpdatedNatively.indexOf(option) === -1
       ),
       currentOptions,
@@ -281,7 +281,7 @@ class ReactFC extends React.Component {
       }
     }
 
-    this.chartObj = new this.FusionCharts(currentOptions);
+    this.chartObj = new this.FroalaCharts(currentOptions);
     this.chartObj.render();
     this.oldOptions = currentOptions;
 
@@ -292,7 +292,7 @@ class ReactFC extends React.Component {
 
   resolveChartOptions(props) {
     const chartConfig = props.chartConfig ? props.chartConfig : {};
-    const inlineOptions = fusionChartsOptions.reduce((options, optionName) => {
+    const inlineOptions = froalaChartsOptions.reduce((options, optionName) => {
       options[optionName] = props[optionName];
       return options;
     }, {});
