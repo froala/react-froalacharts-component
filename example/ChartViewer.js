@@ -1,9 +1,9 @@
 import React from 'react';
 import FroalaCharts from 'froalacharts';
-import FusionTheme from 'froalacharts/themes/fusioncharts.theme.candy';
+import CandyTheme from 'froalacharts/themes/froalacharts.theme.candy';
 import ReactFC from '../lib/ReactFC';
 
-ReactFC.fcRoot(FroalaCharts, FusionTheme);
+ReactFC.fcRoot(FroalaCharts, CandyTheme);
 
 const BAR = 'bar';
 
