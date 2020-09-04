@@ -1,6 +1,6 @@
 {
   "name": "react-froalacharts",
-  "version": "3.1.2",
+  "version": "1.0.0",
   "description": "Simple and Lightweight React component for FroalaCharts JavaScript Charting Library",
   "main": "lib/ReactFC.js",
   "author": {
@@ -55,7 +55,7 @@
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
-    "froalacharts": "^1.0.4",
+    "froalacharts": "^1.0.6",
     "jest": "^22.4.2",
     "lodash": "^4.17.11",
     "nodemon": "^2.0.2",
