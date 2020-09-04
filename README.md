@@ -70,10 +70,9 @@ Import React, `react-froalacharts` and FroalaCharts in your app:
 import React from 'react';
 import ReactDOM from 'react-dom';
 import FroalaCharts from 'froalacharts';
-import Charts from 'froalacharts/froalacharts.charts';
 import ReactFC from 'react-froalacharts';
 
-ReactFC.fcRoot(FroalaCharts, Charts);
+ReactFC.fcRoot(FroalaCharts);
 ```
 
 #### If you have created your app using tools like `webpack` or `parcel`
@@ -84,10 +83,9 @@ Import React, `react-froalacharts` and FroalaCharts in your app:
 import React from 'react';
 import ReactDOM from 'react-dom';
 import FroalaCharts from 'froalacharts/core';
-import Column2d from 'froalacharts/viz/column2d';
 import ReactFC from 'react-froalacharts';
 
-ReactFC.fcRoot(FroalaCharts, Column2d);
+ReactFC.fcRoot(FroalaCharts);
 ```
 
 Note: This way of import will not work in IE11 and below.
@@ -100,11 +98,10 @@ Here is a basic sample that shows how to create a chart using `react-froalachart
 import React from 'react';
 import ReactDOM from 'react-dom';
 import FroalaCharts from 'froalacharts';
-import Charts from 'froalacharts/froalacharts.charts';
-import FusionTheme from 'froalacharts/themes/froalacharts.theme.fusion';
+import CandyTheme from 'froalacharts/themes/froalacharts.theme.candy';
 import ReactFC from 'react-froalacharts';
 
-ReactFC.fcRoot(FroalaCharts, Charts, FusionTheme);
+ReactFC.fcRoot(FroalaCharts, CandyTheme);
 
 const dataSource = {
   chart: {
@@ -113,7 +110,7 @@ const dataSource = {
     xAxisName: 'Country',
     yAxisName: 'Reserves (MMbbl)',
     numberSuffix: 'K',
-    theme: 'fusion'
+    theme: 'candy'
   },
   data: [
     { label: 'Venezuela', value: '290' },
@@ -128,63 +125,7 @@ const dataSource = {
 };
 
 const chartConfigs = {
-  type: 'column2d',
-  width: 600,
-  height: 400,
-  dataFormat: 'json',
-  dataSource: dataSource
-};
-
-ReactDOM.render(<ReactFC {...chartConfigs} />, document.getElementById('root'));
-```
-
-## Render FusionMaps
-
-To render a map, import the FusionMaps module along with the map definition.
-
-```javascript
-import React from 'react';
-import ReactDOM from 'react-dom';
-import FroalaCharts from 'froalacharts';
-import Maps from 'froalacharts/froalacharts.maps';
-import World from 'froalacharts/maps/froalacharts.world';
-import FusionTheme from 'froalacharts/themes/froalacharts.theme.fusion';
-import ReactFC from 'react-froalacharts';
-
-ReactFC.fcRoot(FroalaCharts, Maps, World, FusionTheme);
-// Data Source B
-const dataSource = {
-  chart: {
-    caption: 'Average Annual Population Growth',
-    subcaption: ' 1955-2015',
-    numbersuffix: '%',
-    includevalueinlabels: '1',
-    labelsepchar: ': ',
-    entityFillHoverColor: '#FFF9C4',
-    theme: 'fusion'
-  },
-  colorrange: {
-    minvalue: '0',
-    code: '#FFE0B2',
-    gradient: '1',
-    color: [
-      { minvalue: '0.5', maxvalue: '1.0', color: '#FFD74D' },
-      { minvalue: '1.0', maxvalue: '2.0', color: '#FB8C00' },
-      { minvalue: '2.0', maxvalue: '3.0', color: '#E65100' }
-    ]
-  },
-  data: [
-    { id: 'NA', value: '.82', showLabel: '1' },
-    { id: 'SA', value: '2.04', showLabel: '1' },
-    { id: 'AS', value: '1.78', showLabel: '1' },
-    { id: 'EU', value: '.40', showLabel: '1' },
-    { id: 'AF', value: '2.58', showLabel: '1' },
-    { id: 'AU', value: '1.30', showLabel: '1' }
-  ]
-};
-
-const chartConfigs = {
-  type: 'world',
+  type: 'pie',
   width: 600,
   height: 400,
   dataFormat: 'json',
@@ -230,16 +171,15 @@ Where, EVENTNAME is to be replaced by the event you want to track.
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import FroalaCharts from 'froalacharts';
-import Charts from 'froalacharts/froalacharts.charts';
 import ReactFC from 'react-froalacharts';
-import FusionTheme from 'froalacharts/Charts/froalacharts.theme.fusion';
+import CandyTheme from 'froalacharts/themes/froalacharts.theme.candy';
 
-ReactFC.fcRoot(FroalaCharts, Charts, FusionTheme);
+ReactFC.fcRoot(FroalaCharts, CandyTheme);
 
 const dataSource = /* Data Source A , given above */;
 
 const chartConfigs = {
-  type: 'column2d',
+  type: 'pie',
   width: 600,
   height: 400,
   dataFormat: 'json',
@@ -285,7 +225,7 @@ ReactDOM.render(<Chart />, document.getElementById('root'));
 
 ## Usage and integration of FusionTime
 
-From `fusioncharts@3.13.3-sr.1` and `react-fusioncharts@3.0.0`, You can visualize timeseries data easily on react.
+From `froalacharts@1.0.6` and `react-froalacharts@3.0.0`, You can visualize timeseries data easily on react.
 
 Learn more about FusionTime [here](https://www.fusioncharts.com/fusiontime).
 
@@ -294,10 +234,9 @@ Learn more about FusionTime [here](https://www.fusioncharts.com/fusiontime).
 ```javascript
 import React from 'react';
 import FroalaCharts from 'froalacharts';
-import TimeSeries from 'froalacharts/froalacharts.timeseries';
 import ReactFC from 'react-froalacharts';
 
-ReactFC.fcRoot(FroalaCharts, TimeSeries);
+ReactFC.fcRoot(FroalaCharts);
 
 const jsonify = res => res.json();
 const dataFetch = fetch(
@@ -381,10 +320,9 @@ A custom component to easily add drill down to your react application.
 
 ```javascript
 import FroalaCharts from 'froalacharts';
-import Charts from 'froalacharts/froalacharts.charts';
 import ReactFC from 'react-froalacharts';
 import DrillDown from 'react-froalacharts/components/DrillDown';
-DrillDown.fcRoot(FroalaCharts, Charts);
+DrillDown.fcRoot(FroalaCharts);
 ```
 
 ```jsx
@@ -394,7 +332,7 @@ class MyComponent extends React.Component{
     this.plotChildMap = [ 0, 2, 1 ];
     this.dataSource = /*Data Source A : Given above */   ;
     this.btnConfig = {text : 'Back'};
-    this.type= 'column2d';
+    this.type= 'pie';
     this.height = 400;
     this.width = 400;
   }
@@ -484,16 +422,15 @@ Pass the callback as a prop, to which the chart object will be returned on rende
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import FroalaCharts from 'froalacharts';
-import Charts from 'froalacharts/froalacharts.charts';
 import ReactFC from 'react-froalacharts';
-import FusionTheme from 'froalacharts/themes/froalacharts.theme.fusion';
+import CandyTheme from 'froalacharts/themes/froalacharts.theme.candy';
 
-ReactFC.fcRoot(FroalaCharts, Charts, FusionTheme);
+ReactFC.fcRoot(FroalaCharts, CandyTheme);
 
 const dataSource = /* Data source A given above */;
 
 const chartConfigs = {
-  type: 'column2d',
+  type: 'pie',
   width: 600,
   height: 400,
   dataFormat: 'json',
