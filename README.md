@@ -4,11 +4,11 @@ A simple and lightweight official React component for FroalaCharts JavaScript ch
 
 - Github Repo: [https://github.com/froala/react-froalacharts-component](https://github.com/froala/react-froalacharts-component)
 - Documentation: [https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react)
-- Support: [https://www.fusioncharts.com/contact-support](https://www.fusioncharts.com/contact-support)
-- FusionCharts
+- Support: [support@froala.com](support@froala.com)
+- FroalaCharts
   - Official Website: [https://www.fusioncharts.com/](https://www.fusioncharts.com/)
-  - Official NPM Package: [https://www.npmjs.com/package/fusioncharts](https://www.npmjs.com/package/fusioncharts)
-- Issues: [https://github.com/fusioncharts/react-fusioncharts-component/issues](https://github.com/fusioncharts/react-fusioncharts-component/issues)
+  - Official NPM Package: [https://www.npmjs.com/package/froalacharts](https://www.npmjs.com/package/froalacharts)
+- Issues: [https://github.com/froala/react-froalacharts-component/issues](https://github.com/froala/react-froalacharts-component/issues)
 
 ---
 
@@ -468,7 +468,7 @@ links to help you get started:
 ## Going Beyond Charts
 
 - Explore 20+ pre-built business specific dashboards for different industries like energy and manufacturing to business functions like sales, marketing and operations [here](https://www.fusioncharts.com/explore/dashboards).
-- See [Data Stories](https://www.fusioncharts.com/explore/data-stories) built using FusionCharts’ interactive JavaScript visualizations and learn how to communicate real-world narratives through underlying data to tell compelling stories.
+- See [Data Stories](https://www.fusioncharts.com/explore/data-stories) built using FroalaCharts’ interactive JavaScript visualizations and learn how to communicate real-world narratives through underlying data to tell compelling stories.
 
 ## For Contributors
 
