@@ -225,7 +225,7 @@ ReactDOM.render(<Chart />, document.getElementById('root'));
 
 ## Usage and integration of FusionTime
 
-From `froalacharts@1.0.6` and `react-froalacharts@3.0.0`, You can visualize timeseries data easily on react.
+From `froalacharts@1.0.6` and `react-froalacharts@1.0.0`, You can visualize timeseries data easily on react.
 
 Learn more about FusionTime [here](https://www.fusioncharts.com/fusiontime).
 
