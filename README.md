@@ -1,6 +1,6 @@
 A simple and lightweight official React component for FroalaCharts JavaScript charting library. `react-froalacharts` enables you to add JavaScript charts in your React application or project without any hassle.
 
-## [Demo](https://fusioncharts.github.io/react-fusioncharts-component/)
+## [Demo](https://github.com/froala/react-froalacharts-component/blob/master/README.md#demo)
 
 - Github Repo: [https://github.com/froala/react-froalacharts-component](https://github.com/froala/react-froalacharts-component)
 - Documentation: [https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react)
@@ -485,4 +485,4 @@ $ npm start
 
 ## Licensing
 
-The FroalaCharts React component is open-source and distributed under the terms of the MIT/X11 License. However, you will need to download and include FroalaCharts library in your page separately, which has a [separate license](https://www.fusioncharts.com/buy).
+The FroalaCharts React component is open-source and distributed under the terms of the MIT/X11 License. However, you will need to download and include FroalaCharts library in your page separately, which has a [separate license](https://github.com/froala/react-froalacharts-component/blob/master/README.md#licensing).
