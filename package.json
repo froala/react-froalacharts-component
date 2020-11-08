@@ -1,35 +1,13 @@
 {
   "name": "react-froalacharts",
   "version": "1.0.0",
-  "description": "Simple and Lightweight React component for FroalaCharts JavaScript Charting Library",
+  "description": "Simple and Lightweight React component for FroalaCharts",
   "main": "lib/ReactFC.js",
   "author": {
-    "name": "Idera",
+    "name": "froala",
     "email": "support@froala.com"
   },
   "license": "MIT",
-  "contributors": [
-    {
-      "name": "Rousan Ali",
-      "email": "rousan@fusioncharts.com",
-      "url": "https://github.com/rousan"
-    },
-    {
-      "name": "Subrata Mal",
-      "email": "subrata@fusioncharts.com",
-      "url": "https://github.com/subratamal"
-    },
-    {
-      "name": "Ashok Mandal",
-      "email": "askipop@gmail.com",
-      "url": "https://github.com/ashok1994"
-    },
-    {
-      "name": "Rohan Dey",
-      "email": "rohanoid5@gmail.com",
-      "url": "https://github.com/rohanoid5"
-    }
-  ],
   "homepage": "https://github.com/froala/react-froalacharts-component",
   "repository": {
     "type": "git",
@@ -55,7 +33,7 @@
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
-    "froalacharts": "^1.0.6",
+    "froalacharts": "^1.0.0",
     "jest": "^22.4.2",
     "lodash": "^4.17.11",
     "nodemon": "^2.0.2",
@@ -84,6 +62,7 @@
   },
   "keywords": [
     "react",
+    "react-charts",
     "react-component",
     "component",
     "froalacharts",
@@ -93,8 +72,6 @@
     "graphs",
     "visualization",
     "data-visualization",
-    "dataviz",
-    "browserify",
-    "webpack"
+    "dataviz"
   ]
 }
